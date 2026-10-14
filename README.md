@@ -7,7 +7,7 @@ PyTorch implementation snapshot for DKB³, following the current TMI manuscript.
 **Authors:** Hefeng Ji, Jing Xiao, Jimin Liu, Haoyong Yu, and Zihan Peng.
 **Affiliations:** South China Normal University; National University of Singapore; Guangdong University of Technology.
 
-[中文说明](README.zh-CN.md) · [Framework](assets/fig_overview.pdf) · [Validation](docs/VALIDATION.md)
+[中文说明](README.zh-CN.md) · [Framework](assets/fig_overview.pdf)
 
 ## Overview
 
@@ -121,20 +121,3 @@ selected_probability, candidate_scores = refine_masks(
 ```
 
 The interface requires no annotations. Four default score weights are `(edge, artifact, illumination, consistency) = (1.0, 0.5, 0.25, 0.5)`. The retained optional area penalty defaults to zero. Threshold 0.5 and the existing empty-prediction fallback 0.3 are configurable in the YAML.
-
-## Validation and release status
-
-The core-model definitions and KCS scoring bodies are unchanged from the original source; only backbone-independent interfaces and packaging were added. See [Validation](docs/VALIDATION.md) and [Reproducibility](docs/REPRODUCIBILITY.md). These checks do not establish fresh-installation or end-to-end paper reproduction.
-
-The model-only snapshot passed 20 CPU tests, four CLI entrypoint checks, and the standalone relocated import/audit checks.
-
-This is a local release-preparation snapshot, not an acceptance announcement or a published GitHub repository. Manuscript/runtime differences concerning geometric-prior perturbation, structural-cycle conditioning, and offline sampling remain documented in [Manuscript alignment](docs/MANUSCRIPT_ALIGNMENT.md).
-
-No blanket MIT/Apache license is applied. Required third-party bridge files retain their notices, including CC BY-NC-SA 4.0 in `edm_unet.py`. See [Third-party notices](THIRD_PARTY_NOTICES.md) and [License status](LICENSE_STATUS.md) before redistribution.
-
-## Contact
-
-Hefeng Ji: [jihefeng@m.scnu.edu.cn](mailto:jihefeng@m.scnu.edu.cn).
-Corresponding author Jing Xiao: [xiaojing@scnu.edu.cn](mailto:xiaojing@scnu.edu.cn).
-
-Paper/repository URLs, checkpoint downloads, and formal citation metadata will be added after confirmation by the authors.

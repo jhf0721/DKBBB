@@ -34,9 +34,3 @@ python refine_masks.py --config configs/isic2018.yaml --checkpoint outputs/bridg
 示例输入是占位路径，需要替换成自己的文件。输出包括细化 mask、概率图和候选评分。默认生成两次桥采样及其均值，使用图像证据进行 KCS，不读取真实标签。外部分割器的 TTA 候选可以通过重复 `--candidate 名称=概率图.npy` 传入，但必须先恢复到原图坐标。
 
 也可以在自己的代码中调用 `dual_bbdm.refine_masks(system, image, probability)`。本次只调整模型接口和发布范围，没有重训模型或改变双桥训练、采样和评分公式。
-
-## 核验和发布注意事项
-
-验证记录见 [VALIDATION](docs/VALIDATION.md)。底层日程实际为 `[999,1,0]`、每样本 3 次网络调用；新细化接口会拒绝未实现的 12 步请求。新稿中方向性先验扰动、循环条件及离线步数还需与历史实现对齐，详见 [对齐清单](docs/MANUSCRIPT_ALIGNMENT.md)。
-
-数据、权重、历史实验结果和服务器原始清单未复制。本目录尚未发布到 GitHub。必要桥依赖仍包含第三方代码，不能因去掉对比模型就忽略其授权条款；见 [许可证状态](LICENSE_STATUS.md)。
