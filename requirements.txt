@@ -1,0 +1,10 @@
+# Install a compatible torch/torchvision pair for your CUDA version first.
+# Dependencies for DKB³ only; no downstream segmentation backbones are bundled.
+torch>=2.3
+torchvision>=0.18
+numpy>=1.23,<2
+Pillow>=9.4
+PyYAML>=6
+opencv-python-headless>=4.6,<4.12
+tqdm>=4.64
+piq==0.8.0
