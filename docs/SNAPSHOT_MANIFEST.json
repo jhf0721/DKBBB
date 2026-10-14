@@ -1,0 +1,153 @@
+{
+  "purpose": "DKB³-only local release preparation; no publication or reproduction claim.",
+  "manuscript_reference": "tmi/main.tex",
+  "scope": "Dual bridges, five-channel priors, structural losses, mask-anchored synthesis and backbone-independent KCS.",
+  "copied_source_files": [
+    {
+      "file": "build_manifest.py",
+      "source_group": "dual-bbdm",
+      "source_file": "build_manifest.py",
+      "source_sha256": "fda29108b97700a5880794b74b6c5ea1d952c558b8594fd83b65c377bac2c629"
+    },
+    {
+      "file": "dual_bbdm/__init__.py",
+      "source_group": "dual-bbdm",
+      "source_file": "dual_bbdm/__init__.py",
+      "source_sha256": "d46cf84da790988b32ef7a74a6b0b791a027924e5bc31653fa2cb86302875815"
+    },
+    {
+      "file": "dual_bbdm/config.py",
+      "source_group": "dual-bbdm",
+      "source_file": "dual_bbdm/config.py",
+      "source_sha256": "81a1e2ccc043789d8ca53dd36b400faba6aa68bc58afd4028f3ac7634393185f"
+    },
+    {
+      "file": "dual_bbdm/dataset.py",
+      "source_group": "dual-bbdm",
+      "source_file": "dual_bbdm/dataset.py",
+      "source_sha256": "f067a2fefad4f134e285081d176260c8d77c53d74af736ac7f9733269ea56baf"
+    },
+    {
+      "file": "dual_bbdm/legacy.py",
+      "source_group": "dual-bbdm",
+      "source_file": "dual_bbdm/legacy.py",
+      "source_sha256": "e27c5d82d3a0afc68289eef2153f7f54d359227aa8852c3de6e5b0caa64eb5eb"
+    },
+    {
+      "file": "dual_bbdm/losses.py",
+      "source_group": "dual-bbdm",
+      "source_file": "dual_bbdm/losses.py",
+      "source_sha256": "0ffbc2a596358328cd644bf88d86284db1a6848ffe5192d2c4fe3f2bb21e9c11"
+    },
+    {
+      "file": "dual_bbdm/models.py",
+      "source_group": "dual-bbdm",
+      "source_file": "dual_bbdm/models.py",
+      "source_sha256": "e17a42711826ada8e05aae7562aed7a2d3da98cdb8cbe530102ab0d359f4ab25"
+    },
+    {
+      "file": "dual_bbdm/priors.py",
+      "source_group": "dual-bbdm",
+      "source_file": "dual_bbdm/priors.py",
+      "source_sha256": "9a89f48b634f0690a2ad4d811fa4c3e36c3097f1afb776806c36cf43b2e58eef"
+    },
+    {
+      "file": "export_bridge_artifacts.py",
+      "source_group": "dual-bbdm",
+      "source_file": "export_bridge_artifacts.py",
+      "source_sha256": "76b7b07428f2bdc665b86455e6e52f15cdeb0b50fed02cdef9af92de7b4ed3b4"
+    },
+    {
+      "file": "tests/test_kcs_weight_replay.py",
+      "source_group": "dual-bbdm",
+      "source_file": "tests/test_kcs_weight_replay.py",
+      "source_sha256": "9464f63aee31c9e994e1f5c7e8fe5718a30b3f0e1025369e62a0bf1bc5239e05"
+    },
+    {
+      "file": "train_dual_bridge.py",
+      "source_group": "dual-bbdm",
+      "source_file": "train_dual_bridge.py",
+      "source_sha256": "90c0c3d829eb1b47a7fff79ef714c1b002a7792bafbd6d34522c7b4cb0cc00fb"
+    },
+    {
+      "file": "vendor/diff_bbdm/ddbm/edm_unet.py",
+      "source_group": "bridge-runtime",
+      "source_file": "vendor/diff_bbdm/ddbm/edm_unet.py",
+      "source_sha256": "7e380459cee11f7d353602cbb142dce6482b825b22d1b7dc257705dcd2f5d220"
+    },
+    {
+      "file": "vendor/diff_bbdm/ddbm/fp16_util.py",
+      "source_group": "bridge-runtime",
+      "source_file": "vendor/diff_bbdm/ddbm/fp16_util.py",
+      "source_sha256": "1cb2c5774692675cc080b6c056550e49ff0a221c2d91e863c037a4a92a1c5c46"
+    },
+    {
+      "file": "vendor/diff_bbdm/ddbm/karras_diffusion.py",
+      "source_group": "bridge-runtime",
+      "source_file": "vendor/diff_bbdm/ddbm/karras_diffusion.py",
+      "source_sha256": "8bf3a3e2efb8fec11b9700e0445d27244fc327ae0035eacf4569b5563deb9571"
+    },
+    {
+      "file": "vendor/diff_bbdm/ddbm/logger.py",
+      "source_group": "bridge-runtime",
+      "source_file": "vendor/diff_bbdm/ddbm/logger.py",
+      "source_sha256": "b6aa6f5a16643eedae73261087b96c88c2375a3360bfb392556bc506310fe63f"
+    },
+    {
+      "file": "vendor/diff_bbdm/ddbm/nn.py",
+      "source_group": "bridge-runtime",
+      "source_file": "vendor/diff_bbdm/ddbm/nn.py",
+      "source_sha256": "ceaf0703dfbe0c5de7afc72054740450c2705e3ae27cfa7fc2b438c9ab6d86b2"
+    },
+    {
+      "file": "vendor/diff_bbdm/ddbm/script_util.py",
+      "source_group": "bridge-runtime",
+      "source_file": "vendor/diff_bbdm/ddbm/script_util.py",
+      "source_sha256": "c13528cf708472b8efc43fc5e9aed3f9c5519a8a5079137d991fa75310880868"
+    },
+    {
+      "file": "vendor/diff_bbdm/ddbm/unet.py",
+      "source_group": "bridge-runtime",
+      "source_file": "vendor/diff_bbdm/ddbm/unet.py",
+      "source_sha256": "5589687dbd58fd5aa45077aaa02875ea35d116aa5e3a2a4f80908e969ca1b1a6"
+    },
+    {
+      "file": "vendor/diff_bbdm/ddbm/utils.py",
+      "source_group": "bridge-runtime",
+      "source_file": "vendor/diff_bbdm/ddbm/utils.py",
+      "source_sha256": "6ebae607f2227e9db4297d47d4ead837f18912bbfa19cc949f927f1027e830d1"
+    },
+    {
+      "file": "assets/fig_overview.pdf",
+      "source_group": "tmi",
+      "source_file": "assets/fig_overview.pdf",
+      "source_sha256": "e39a160e017fee8b17ef8315b29c98231285970f3770f7715c9f84df0dbd86d2"
+    }
+  ],
+  "extracted_component_provenance": [
+    {
+      "file": "dual_bbdm/kcs.py",
+      "source_group": "dual-bbdm",
+      "source_file": "evaluate_candidate_reranking.py",
+      "preserved_functions": [
+        "lesion_prob_to_binary",
+        "masked_mean",
+        "masked_std",
+        "score_candidate"
+      ],
+      "note": "Scoring bodies are retained; signatures and selection interface are backbone independent.",
+      "source_sha256": "def386801a27a0577879393c0d89bfa90280d51f53ef46850ff64f3b90453b22"
+    }
+  ],
+  "new_model_only_entrypoints": [
+    "dual_bbdm/inference.py",
+    "refine_masks.py"
+  ],
+  "excluded_components": [
+    "Third-party segmentation backbones",
+    "Baseline training/evaluation adapters",
+    "Statistical and plotting scripts",
+    "Native baseline dataset helpers",
+    "Medical datasets and model weights"
+  ]
+}

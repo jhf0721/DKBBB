@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "packaged_files": 45,
+  "python_files": 29,
+  "copied_source_files": 20,
+  "original_source_check_requested": true,
+  "original_source_files_verified_unchanged": 20,
+  "preserved_core_implementation_checks": {
+    "bridge_and_prior_definitions_unchanged": true,
+    "bridge_data_loading_unchanged": true,
+    "kcs_scoring_bodies_unchanged": true
+  },
+  "modified_copied_files": [
+    "dual_bbdm/__init__.py",
+    "dual_bbdm/dataset.py",
+    "dual_bbdm/legacy.py",
+    "dual_bbdm/models.py",
+    "export_bridge_artifacts.py",
+    "tests/test_kcs_weight_replay.py",
+    "train_dual_bridge.py",
+    "vendor/diff_bbdm/ddbm/script_util.py"
+  ],
+  "errors": [],
+  "scope": "Static packaging audit, not a fresh installation or paper reproduction.",
+  "outstanding": [
+    "manuscript/runtime alignment",
+    "third-party license verification",
+    "exact final split/checkpoint/config provenance",
+    "fresh-environment end-to-end testing"
+  ]
+}

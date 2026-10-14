@@ -1,0 +1,80 @@
+# Portable starter template. Not a verified final manuscript run configuration.
+# Run from repository root. Bundled bridge schedule has actual NFE=3 per sample.
+data:
+  manifest_path: data/isic2016_train.jsonl
+  val_manifest_path: data/isic2016_val.jsonl
+  test_manifest_path: data/isic2016_test.jsonl
+  test_image_dir: datasets/ISIC2016/test/images
+  test_mask_dir: datasets/ISIC2016/test/masks
+  artifact_root: artifacts/isic2016
+  image_size: 256
+  band_radius: 5
+  num_workers: 4
+bridge:
+  dims: 2
+  image_size: 256
+  in_channels: 3
+  num_channels: 64
+  num_res_blocks: 2
+  num_heads: 4
+  num_heads_upsample: -1
+  num_head_channels: -1
+  attention_resolutions: 32,16,8
+  channel_mult: ''
+  dropout: 0.0
+  class_cond: false
+  use_checkpoint: false
+  use_scale_shift_norm: true
+  resblock_updown: false
+  use_fp16: false
+  use_new_attention_order: false
+  attention_type: att
+  learn_sigma: false
+  condition_mode: concat
+  pred_mode: ve_simple
+  weight_schedule: bridge_karras
+  sigma_data: 0.5
+  sigma_min: 0.002
+  sigma_max: 80.0
+  beta_d: 2.0
+  beta_min: 0.1
+  cov_xy: 0.0
+  unet_type: adm
+  prior_in_channels: 5
+  prior_hidden_channels: 32
+  consistency_steps: 6
+  structure_weight: 1.0
+  gradient_weight: 0.25
+  mask_supervision_weight: 1.0
+train:
+  epochs: 40
+  batch_size: 4
+  lr: 0.0001
+  weight_decay: 0.01
+  amp: true
+  log_interval: 20
+  save_interval: 10
+  output_dir: outputs/bridge/isic2016
+  resume: ''
+  seed: 42
+export:
+  batch_size: 1
+  sample_steps: 3
+  checkpoint: outputs/bridge/isic2016/last.pt
+  artifact_root: artifacts/isic2016
+inference:
+  bridge_steps: 3
+  num_bridge_samples: 2
+  include_bridge_mean: true
+  pseudo_prior_radius: 5
+  score_band_radius: 5
+  threshold: 0.5
+  empty_fallback: 0.3
+  edge_weight: 1.0
+  artifact_weight: 0.5
+  illumination_weight: 0.25
+  consistency_weight: 0.5
+  area_weight: 0.0
+  primary_score_margin: 0.0
+  amp: true
+  seed: 42
