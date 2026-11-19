@@ -2,7 +2,7 @@
 
 ## Dermoscopic Knowledge-Guided Bidirectional Brownian Bridge Augmentation for Skin Lesion Segmentation
 
-PyTorch implementation snapshot for DKB³, following the current TMI manuscript.
+PyTorch implementation for DKB³ (Medical Image Analysis).
 
 **Authors:** Hefeng Ji, Jing Xiao, Jimin Liu, Haoyong Yu, and Zihan Peng.
 **Affiliations:** South China Normal University; National University of Singapore; Guangdong University of Technology.
@@ -22,7 +22,7 @@ The five prior channels represent signed distance, a boundary band, image gradie
 ## Structure
 
 ```text
-DKB^3/
+DKB3/
 ├── dual_bbdm/
 │   ├── models.py          # Dual bridges, prior encoder, branch adapters
 │   ├── priors.py          # Five-channel dermoscopic priors
@@ -46,7 +46,7 @@ DKB^3/
 Python 3.10 is recommended. Install a compatible PyTorch/torchvision pair for your hardware, then:
 
 ```bash
-cd 'DKB^3'
+cd DKB3
 python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
 ```

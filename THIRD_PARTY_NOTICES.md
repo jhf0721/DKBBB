@@ -10,6 +10,6 @@ This model-only release does not bundle third-party segmentation backbones. It d
 
 PyTorch, torchvision, PIQ, OpenCV, and other separately installed packages retain their own licenses and model-weight terms. Medical images and annotations are not licensed or redistributed by this repository.
 
-The framework figure is from the author-supplied current TMI manuscript. Confirm its redistribution rights alongside the author-owned code license.
+The framework figure is from the author-supplied manuscript. Confirm its redistribution rights alongside the author-owned code license.
 
 No blanket license grant is made for this tree. Attribution alone does not substitute for permission or license compliance. See [LICENSE_STATUS.md](LICENSE_STATUS.md) before uploading.

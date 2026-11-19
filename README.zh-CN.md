@@ -1,6 +1,6 @@
 # DKB³
 
-本目录只包含 DKB³ 自身的实现，论文信息和架构图参考当前 `tmi` 稿件。完整说明见 [英文 README](README.md)。
+本目录只包含 DKB³ 自身的实现（针对《Medical Image Analysis》投稿版本）。完整说明见 [英文 README](README.md)。
 
 ## 保留内容
 
